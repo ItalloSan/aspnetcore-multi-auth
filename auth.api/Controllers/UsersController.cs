@@ -11,6 +11,7 @@ namespace auth.api.Controllers
 {
     [Route("api/users")]
     [ApiController]
+    
     // [Authorize(AuthenticationSchemes = Constants.AzureAdScheme)]
     // [AzureAdAuthFilter]
     public class UsersController : ControllerBase
