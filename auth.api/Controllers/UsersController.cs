@@ -13,13 +13,14 @@ namespace auth.api.Controllers
     [ApiController]
     // [Authorize(AuthenticationSchemes = Constants.AzureAdScheme)]
     // [AzureAdAuthFilter]
+    //[AllowAnonymous]
     public class UsersController : ControllerBase
     {
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "maarten", HttpContext.User.Identity.Name };
+            return new string[] { "foo", HttpContext.User.Identity.Name };
         }
     }
 }
